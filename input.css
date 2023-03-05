@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttons{
+    @apply inline-block font-bold text-2xl rounded-full w-24 py-4 px-10 mr-4 my-2 border-none text-white text-center;
+}
+
+.buttons_last{
+    @apply mr-0;
+}
+
+.active{
+    @apply bg-yellow-500 font-extrabold;
+}
+
+
+.brown{
+    @apply bg-yellow-900/50 text-yellow-400 font-extrabold;
+}
+
+.purple{
+    @apply bg-purple-900 text-purple-400 font-extrabold;
+}
+
+.active_purple{
+    @apply bg-purple-400 font-extrabold text-3xl rounded-full w-24 py-4 px-10 mr-4 my-2 border-none text-center text-purple-900 hover:cursor-pointer;
+}
+
+.gray{
+    @apply bg-gray-600;
+}
+
+.gray_dark{
+    @apply bg-gray-800;
+}
+
+.buttons:hover{
+    @apply cursor-pointer;
+}

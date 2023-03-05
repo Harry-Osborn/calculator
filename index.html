@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon (7).ico">
+    <title>calculator</title>
+</head>
+<body class="m-0 bg-cover" style="background-image: url('images/dark.jpg');">
+
+    <!-- navbar -->
+    <header class="bg-transparent">
+        <img src="images/calculator_icon.png" alt="" class="w-10 h-10 inline-block justify-center align-bottom">
+        <h1 class="inline-block align-bottom font-extrabold text-3xl text-white capitalize">CALCULATE</h1>
+    </header>
+
+    <!-- background -->
+    <div class="flex items-center justify-center h-screen w-screen calculator">
+        <!-- shell -->
+        <div class="bg-neutral-900 w-fit h-fit p-5 rounded-3xl">
+            <!-- result display -->
+            <div class="bg-white/5 p-5 mt-5 add">
+                <p class="text-green-200 font-extrabold text-end text-5xl display">00</p> 
+            </div>
+            
+            <!-- buttons -->
+            <div class="mx-3 mt-5">
+                <table class="w-fit num_opr">
+                    <tr>
+                        <td class="buttons active">C</td>
+                        <td class="buttons brown">(</td>
+                        <td class="buttons brown">)</td>
+                        <td class="buttons buttons_last purple">x</td>
+                    </tr>
+                    <tr>
+                        <td class="buttons brown">√</td>
+                        <td class="buttons brown">%</td>
+                        <td class="buttons brown">±</td>
+                        <td class="buttons buttons_last purple">÷</td>
+                    </tr>
+                    <tr>
+                        <td class="buttons gray">7</td>
+                        <td class="buttons gray">8</td>
+                        <td class="buttons gray">9</td>
+                        <td class="buttons buttons_last purple">-</td>
+                    </tr>
+                    <tr>
+                        <td class="buttons gray">4</td>
+                        <td class="buttons gray">5</td>
+                        <td class="buttons gray">6</td>
+                        <td class="buttons buttons_last purple">+</td>
+                    </tr>
+                </table>
+                <!-- new table is to avoid the collision between the rowspan -->
+                <table class="num_opr">
+                    <tr>
+                        <td class="buttons gray">1</td>
+                        <td class="buttons gray">2</td>
+                        <td class="buttons gray">3</td>
+                        <td class="active_purple" rowspan="2">=</td>
+                    </tr>
+                    <tr>
+                        <td class="buttons gray">.</td>
+                        <td class="buttons gray">0</td>
+                        <td class="buttons gray_dark">⌫</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="final.js"></script>
+</body>
+</html>
